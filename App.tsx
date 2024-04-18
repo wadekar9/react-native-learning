@@ -179,3 +179,64 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+
+
+
+// import * as React from 'react';
+// import {NavigationContainer} from '@react-navigation/native';
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+// import HomeScreen from './src/screens/HomeScreen';
+// import LoginScreen from './src/screens/LoginScreen';
+// import RegisterScreen from './src/screens/RegisterScreen';
+// import {store, persister} from './src/store/store';
+// import {Provider, useSelector} from 'react-redux';
+// import {PersistGate} from 'redux-persist/integration/react';
+
+// const Stack = createNativeStackNavigator();
+
+// const AuthStack = () => {
+//   return (
+//     <Stack.Navigator initialRouteName="Login">
+//       <Stack.Screen name="Login" component={LoginScreen} />
+//       <Stack.Screen name="Register" component={RegisterScreen} />
+//     </Stack.Navigator>
+//   );
+// };
+
+// const PublicStack = () => {
+//   return (
+//     <Stack.Navigator initialRouteName="Home">
+//       <Stack.Screen name="Home" component={HomeScreen} />
+//     </Stack.Navigator>
+//   );
+// };
+
+// const RootNavigator = () => {
+//   const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
+
+//   return (
+//     <Stack.Navigator
+//       screenOptions={{
+//         headerShown: false,
+//       }}>
+//       {isAuthenticated ? (
+//         <Stack.Screen name="PublicStack" component={PublicStack} />
+//       ) : (
+//         <Stack.Screen name="AuthStack" component={AuthStack} />
+//       )}
+//     </Stack.Navigator>
+//   );
+// };
+
+// export default function App() {
+//   return (
+//     <Provider store={store}>
+//       <PersistGate loading={null} persistor={persister}>
+//         <NavigationContainer>
+//           <RootNavigator />
+//         </NavigationContainer>
+//       </PersistGate>
+//     </Provider>
+//   );
+// }
