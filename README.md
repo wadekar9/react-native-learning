@@ -1,8 +1,12 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## UI Animations
 
-# Getting Started
+Here are some GIFs showcasing the UI animations implemented in this project:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+<div style="display: flex; flex-direction: column; align-items: center;">
+   <img src="./docs/assets/app-theme.gif" alt="Theme Color UI Animation" width="300" />
+   <br />
+   <img src="./docs/assets/apple-invites.gif" alt="Apple Invites Animation" width="300" />
+</div>
 
 ## Step 1: Start the Metro Server
 
