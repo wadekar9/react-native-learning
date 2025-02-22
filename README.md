@@ -2,7 +2,7 @@
 
 Here are some GIFs showcasing the UI animations implemented in this project:
 
-<div style="display: flex; flex-direction: column; align-items: center;">
+<div style="display: flex; flex-direction: row; align-items: center;">
    <img src="./docs/assets/app-theme.gif" alt="Theme Color UI Animation" width="300" />
    <br />
    <img src="./docs/assets/apple-invites.gif" alt="Apple Invites Animation" width="300" />
