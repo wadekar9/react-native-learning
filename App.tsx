@@ -243,17 +243,20 @@
 
 
 import { StyleSheet, Text, View } from 'react-native'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import React from 'react'
 import ThemeScreen from './src/screens/ThemeScreen'
 import FileUploadScreen from './src/screens/FileUploadScreen'
 import PlacePickerScreen from './src/screens/PlacePickerScreen'
 import ColorScreen from './src/screens/ColorScreen'
+import AppleInvites from './src/screens/AppleInvites'
 
 const App = () => {
 
   return (
-    // <FileUploadScreen />
-    <ColorScreen />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <AppleInvites />
+    </GestureHandlerRootView>
   )
 }
 
