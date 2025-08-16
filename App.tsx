@@ -250,12 +250,16 @@ import FileUploadScreen from './src/screens/FileUploadScreen'
 import PlacePickerScreen from './src/screens/PlacePickerScreen'
 import ColorScreen from './src/screens/ColorScreen'
 import AppleInvites from './src/screens/AppleInvites'
+import ReactNativeAnimation from './src/react-native-animations/ReactNativeAnimation'
+import JigsawPuzzle from './src/react-native-animations/jigsaw-puzzlle'
+import JigsawPuzzleGrok from './src/react-native-animations/jigsaw-puzzle-grok'
+import PicturePuzzleApp from './src/react-native-animations/picture-puzzle'
 
 const App = () => {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <AppleInvites />
+      <PicturePuzzleApp />
     </GestureHandlerRootView>
   )
 }
