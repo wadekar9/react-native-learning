@@ -2,7 +2,11 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+<div style="display: flex; flex-direction: row; align-items: center;">
+   <img src="./docs/assets/app-theme.gif" alt="Theme Color UI Animation" width="300" />
+   <br />
+   <img src="./docs/assets/apple-invites.gif" alt="Apple Invites Animation" width="300" />
+</div>
 
 ## Step 1: Start Metro
 
