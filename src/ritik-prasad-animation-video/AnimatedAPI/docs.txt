@@ -1,0 +1,94 @@
+### Docs :
+React Native Animated API
+The Animated library helps you create smooth and powerful animations easily. It workd by linking an animated value to a component's style and updating it over time.
+
+# useNativeDriver : Helps to run animation on UI thread, instead of JS thread.
+-------------------------------------
+UI Thread  |   |   |   |   |   |   | Run on UI (Native Driver)
+-------------------------------------
+JS Thread
+-------------------------------------
+
+
+# Formula :
+ VCF
+ V ---> Animated.Value
+ C ---> Connect to component
+ F ---> Animate with a function
+
+# How it works :
+- Create an animated value - This is the starting point for your animations.
+- Connect it to a component - attach the value to style properties like opacity, position or scale.
+- Animate it with a function - use methods like animated.timing() to update the value smoothly.
+
+
+# Interpolation : 
+
+Interpolation is a way of estimating a function at intermediate pointsm learning from the ranges 
+you provide.
+
+
+             ----------
+            |  Anim 1  |
+             ----------
+                ||
+    -------------------------
+    |           |           |
+  Anim2       Anim3       Anim4
+
+
+  X   ---> 0 5 10 20
+ f(X) ---> 0 ? 20 40
+
+
+- Interpolation is the process of estimating values between known data points. It's like keyframes.
+- You can interpolate animated values using .interpolate function which takes a inputRange, that interpolates and maps the values to an outputRange.
+
+
+
+# Extrapolation : 
+- Predicting something beyond the known data.
+
+# Clamping : 
+- Clamping means restricting a value within a specific range.
+
+     ----------------------------------------
+    |        😎                              |
+     ----------------------------------------
+     0                                      100
+
+- clamp the rate of change (difference) rather than the absolute value.
+- For example, if a UI element moves based on user input, DiffClamp ensures that each movement step stays within a defined speed range,
+preventing sudden jumps or unnatural motion.
+
+- Extrapolation decides how values behave when the input range is exceeded.
+
+# Types of Extrapolation:
+
+'clamp' ---> Restricts the output to stay within the given range.
+Example : If the range is [0, 1] ---> [0, 100] and input is 1.5, it still outputs 100(max value).
+
+'extend' ---> Allows the output to go beyond the defined range.
+Example: If the range is [0,1] ---> [0,100] and input is 1.5 it outputs 150.
+
+'identity' ---> The output matches the input directly.
+Example : If input is 2, output is also 2, without transformation.
+
+- These control how extrapolation behaves at the start and end of the input range.
+- extrapolateLeft ---> Defines behavior for inputs smaller than the range start.
+- extrapolateRight ---> Defines behavior for inputs larger than the range end.
+
+
+
+
+## Easing : 
+- Easing is the way an animation or movement starts and ends. Instead of moving at a constant speed, easing makes the motion feel more natural.
+For example, a car doesn't start or stop instantly -- it gradually speeds up and slows down.
+
+demo websites : 
+1. https://easings.net/
+2. https://cubic-bezier.com/
+image.png
+
+
+
