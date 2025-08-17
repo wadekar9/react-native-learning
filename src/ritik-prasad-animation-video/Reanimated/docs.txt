@@ -1,0 +1,75 @@
+React Native Reanimated 4.X version
+
+1. The Animated API mostly runs animations on the JS thread, but Reanimated runs animations on the UI thread(Better performance).
+2. Animated API is limited to perdefined interpolations and sequences, With Reanimated you get gesture animations complex physics-based animations and more.
+3. Worklets and Direct Manipulation
+    - Reanimated introduces worklets which allow you to write animations and transformations in a way bypasses the JS thread.
+    - This means faster reponses to gestures, better fram rates and a more fluid UI/UX.
+4. Better Gesture handling (Integration with React Native Gesture Handler)
+    - When combined with react-native-gesture-handler, Reanimated enables super-reponsive touch gestures (e.g. swipe, drag, pinch-to-zoom).
+    - The Animated API struggles with complex gesture-driven animations.
+5. Native Driver 2.0 & Shared Element Transitions
+    - Reanimated supports advanced transitions(like shared element transitions), something  the Animated API does not do well.
+    - Native Driver 2.0 allows more properties to be animated, compared to the default animated API.
+6. More Control & Flexibility
+    - You can perform calculations inside animations (like interpolating values dynamically).
+    - Reanimated allows conditional animations, pausing/resuming animations, and advanced chaining.
+
+
+# What is React Native Reanimated?
+- React Native Reanimated is a powerful animaton library built by software mansion.
+- With Reanimated, you can easily create smooth animations and interactions that run on the UI thread.
+
+
+
+# Worklets : 
+- Worklets are short-running JS functions that can run on the UI thread. Reanimated uses worklets to calculate view styles and react to events 
+on the UI thread.
+
+    ------------------------------------------------------------------
+        UI Thread  | blue | green | red | yellow | pink | Run on UI (Native Driver)
+    ------------------------------------------------------------------
+        JS Thread  |   |   |   |   |   |   | Run on JS (Default)
+    ------------------------------------------------------------------
+
+# Key Features of worklets :
+- Runs in a separate Thread :  Worklets execute on the UI thread, reducing the change of frame drops and keeping animations smooth.
+- Prefixed with 'worklet' : To make a function a worklet, add 'worklet', add 'worklet' as the first statement inside the function.
+- Optimized for performance : Since they don't depend on the JS thread, they are highly efficient for animations and gestures.
+
+
+
+# Gesture Handler : 
+- Gesture handler provides a declarative API exposing the native platform's touch and gesture system to React Native.
+- It allows you to define gestures in a declarative way, without having to write complex event handlers.
+
+Gesture.pan()
+
+1. UNDETERMINED
+2. BEGAN
+3. ACTIVE
+4. END
+5. CANCELLED
+
+
+Gesture.longPress()
+
+1. UNDETERMINED
+2. BEGAN
+3. ACTIVE
+4. END
+5. CANCELLED
+
+Gestures : 
+1. pan
+2. tap
+3. longPress
+4. rotation
+5. pinch
+6. hover
+etc ....
+
+
+Race : Onle one gesture can win, the first one to start.
+Simultaneous : Multiple gestures can win, all at the same time.
+Exclusive : Only one gesture can win at a time.

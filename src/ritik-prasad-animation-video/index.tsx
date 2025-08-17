@@ -12,6 +12,19 @@ import RNCreateAnimatedComponent from './AnimatedAPI/RNCreateAnimatedComponent'
 import LayoutAnim from './AnimatedAPI/LayoutAnim'
 import ScrollEvent from './AnimatedAPI/ScrollEvent'
 import RNBasic from './Reanimated/RNBasic'
+import AnimationMethods from './Reanimated/AnimationMethods'
+import RNHooksAnimations from './Reanimated/RNHooksAnimations'
+import ScrollHandler from './Reanimated/ScrollHandler'
+import RNScrollTo from './Reanimated/RNScrollTo'
+import RNScrollOffset from './Reanimated/RNScrollOffset'
+import RNKeyboardHandler from './Reanimated/RNKeyboardHandler'
+import RNEnterExitAnimation from './Reanimated/RNEnterExitAnimation'
+import RNLayoutTransition from './Reanimated/RNLayoutTransition'
+import RNSkippingAnimation from './Reanimated/RNSkippingAnimation'
+import RNListLayoutAnimation from './Reanimated/RNListLayoutAnimation'
+import RNKeyframeAnimation from './Reanimated/RNKeyframeAnimation'
+import RNWorklets from './Reanimated/RNWorklets'
+import RNGestureHandler from './Reanimated/RNGestureHandler'
 
 const AnimatedApp = () => {
     return (
@@ -38,8 +51,20 @@ const AnimatedApp = () => {
 
                 {/* Reanimated API */}
 
-                <RNBasic />
-
+                {/* <RNBasic /> */}
+                {/* <AnimationMethods /> */}
+                {/* <RNHooksAnimations /> */}
+                {/* <ScrollHandler /> */}
+                {/* <RNScrollTo /> */}
+                {/* <RNScrollOffset /> */}
+                {/* <RNKeyboardHandler /> */}
+                {/* <RNEnterExitAnimation /> */}
+                {/* <RNLayoutTransition /> */}
+                {/* <RNSkippingAnimation /> */}
+                {/* <RNListLayoutAnimation /> */}
+                {/* <RNKeyframeAnimation /> */}
+                {/* <RNWorklets /> */}
+                <RNGestureHandler />
             </View>
         </View>
     )
