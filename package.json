@@ -12,7 +12,7 @@
   "dependencies": {
     "@animatereactnative/marquee": "^0.5.2",
     "@animatereactnative/stagger": "^0.3.0",
-    "@shopify/react-native-skia": "^2.2.3",
+    "@shopify/react-native-skia": "^2.2.4",
     "axios": "^1.6.2",
     "react": "19.0.0",
     "react-native": "0.78.3",

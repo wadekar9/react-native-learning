@@ -25,6 +25,10 @@ import RNListLayoutAnimation from './Reanimated/RNListLayoutAnimation'
 import RNKeyframeAnimation from './Reanimated/RNKeyframeAnimation'
 import RNWorklets from './Reanimated/RNWorklets'
 import RNGestureHandler from './Reanimated/RNGestureHandler'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import Threading from './Reanimated/Threading'
+import SkiaBasics from './Skia/SkiaBasics'
+import GarGameWithSkia from './Skia/GarGameWithSkia'
 
 const AnimatedApp = () => {
     return (
@@ -64,7 +68,11 @@ const AnimatedApp = () => {
                 {/* <RNListLayoutAnimation /> */}
                 {/* <RNKeyframeAnimation /> */}
                 {/* <RNWorklets /> */}
-                <RNGestureHandler />
+                {/* <RNGestureHandler /> */}
+                {/* <Threading /> */}
+
+                {/* <SkiaBasics /> */}
+                <GarGameWithSkia />
             </View>
         </View>
     )

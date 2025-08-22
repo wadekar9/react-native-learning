@@ -1,6 +1,15 @@
-const { putResolve } = require("redux-saga/effects");
-
 module.exports = {
   presets: ['module:@react-native/babel-preset'],
-  plugins: ['react-native-reanimated/plugin']
+  plugins: [
+    [
+      'react-native-reanimated/plugin', {
+        processNestedWorklets: true,
+        // relativeSourceLocation: true,
+        // disableInlineStylesWarning: true,
+        // omitNativeOnlyData: true,
+        // globals: ['myObjectOnUI'],
+        // substituteWebPlatformChecks: true,
+      }
+    ]
+  ]
 };
