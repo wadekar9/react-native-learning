@@ -73,3 +73,21 @@ etc ....
 Race : Onle one gesture can win, the first one to start.
 Simultaneous : Multiple gestures can win, all at the same time.
 Exclusive : Only one gesture can win at a time.
+
+
+Threading : 
+1. runOnJS
+- Runs worklet function on JS thread.
+- Updating React State inside an animaton
+
+2. runOnUI
+- Runs worklet function on UI thread.
+- Starting animations from a JS event
+
+3. runOnRunTime(fn, runtime)
+- Runs function on a custom rumtime.
+- Offloading computation-heavy tasks
+
+4. createWorkletRuntime(name)
+- Creates a new execution environment for worklets.
+- Running background processes.
