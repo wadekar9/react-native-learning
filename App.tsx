@@ -253,13 +253,17 @@ import AppleInvites from './src/screens/AppleInvites'
 import ReactNativeAnimation from './src/react-native-animations/ReactNativeAnimation'
 import JigsawPuzzle from './src/react-native-animations/jigsaw-puzzlle'
 import JigsawPuzzleGrok from './src/react-native-animations/jigsaw-puzzle-grok'
-import PicturePuzzleApp from './src/react-native-animations/picture-puzzle'
+import SegmentTabbarAnimation from './src/react-native-animations/segment-tabbar-animation'
+import { NavigationContainer } from '@react-navigation/native'
+// import PicturePuzzleApp from './src/react-native-animations/picture-puzzle'
 
 const App = () => {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <PicturePuzzleApp />
+      <NavigationContainer>
+        <SegmentTabbarAnimation />
+      </NavigationContainer>
     </GestureHandlerRootView>
   )
 }

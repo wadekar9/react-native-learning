@@ -17,4 +17,4 @@ const ReduxApp = () => {
   );
 };
 
-AppRegistry.registerComponent(appName, () => AnimationApp);
+AppRegistry.registerComponent(appName, () => App);
