@@ -3,9 +3,9 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 # Getting Started
 
 <div style="display: flex; flex-direction: row; align-items: center;">
-   <img src="./docs/assets/app-theme.gif" alt="Theme Color UI Animation" width="300" />
-   <br />
-   <img src="./docs/assets/apple-invites.gif" alt="Apple Invites Animation" width="300" />
+   <img src="./docs/assets/app-theme.gif" alt="Theme Color UI Animation" width="250" />
+   <img src="./docs/assets/apple-invites.gif" alt="Apple Invites Animation" width="250" />
+   <img src="./docs/assets/tabbar-animation.gif" alt="Tab Bar Animation" width="250" />
 </div>
 
 ## Step 1: Start Metro
